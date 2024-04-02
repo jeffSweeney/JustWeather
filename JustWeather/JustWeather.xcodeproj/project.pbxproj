@@ -16,6 +16,8 @@
 		E09162EC2BBC2D02009BF31C /* Color+JustWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = E09162EB2BBC2D02009BF31C /* Color+JustWeather.swift */; };
 		E09162F12BBC2E16009BF31C /* JWBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = E09162F02BBC2E16009BF31C /* JWBackground.swift */; };
 		E09162F32BBC338B009BF31C /* HourlyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E09162F22BBC338B009BF31C /* HourlyView.swift */; };
+		E09162F52BBC40EE009BF31C /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E09162F42BBC40EE009BF31C /* WeatherService.swift */; };
+		E09162F72BBC4586009BF31C /* HourlyRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E09162F62BBC4586009BF31C /* HourlyRowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,8 @@
 		E09162EB2BBC2D02009BF31C /* Color+JustWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+JustWeather.swift"; sourceTree = "<group>"; };
 		E09162F02BBC2E16009BF31C /* JWBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JWBackground.swift; sourceTree = "<group>"; };
 		E09162F22BBC338B009BF31C /* HourlyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourlyView.swift; sourceTree = "<group>"; };
+		E09162F42BBC40EE009BF31C /* WeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
+		E09162F62BBC4586009BF31C /* HourlyRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourlyRowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +123,7 @@
 		E09162DC2BBB4FCD009BF31C /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				E09162F42BBC40EE009BF31C /* WeatherService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -151,6 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				E09162F22BBC338B009BF31C /* HourlyView.swift */,
+				E09162F62BBC4586009BF31C /* HourlyRowView.swift */,
 			);
 			path = Hourly;
 			sourceTree = "<group>";
@@ -240,7 +246,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E09162F52BBC40EE009BF31C /* WeatherService.swift in Sources */,
 				E09162CD2BBB4F7A009BF31C /* ContentView.swift in Sources */,
+				E09162F72BBC4586009BF31C /* HourlyRowView.swift in Sources */,
 				E09162CB2BBB4F7A009BF31C /* JustWeatherApp.swift in Sources */,
 				E09162F12BBC2E16009BF31C /* JWBackground.swift in Sources */,
 				E09162EA2BBB7AD9009BF31C /* TodayView.swift in Sources */,

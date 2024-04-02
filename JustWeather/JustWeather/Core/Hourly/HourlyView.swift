@@ -22,6 +22,14 @@ struct HourlyView: View {
             Rectangle()
                 .frame(height: 0.5)
             
+            ScrollView {
+                ForEach(0...15, id: \.self) { hourlyRow in
+                    HourlyRowView()
+                        .padding(.horizontal)
+                        .padding(.vertical, 2)
+                }
+            }
+            
             Spacer()
         }
         .foregroundStyle(.white)
