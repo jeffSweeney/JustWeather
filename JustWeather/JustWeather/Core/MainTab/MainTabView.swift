@@ -9,7 +9,31 @@ import SwiftUI
 
 struct MainTabView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        TabView {
+            TodayView()
+                .tabItem {
+                    VStack {
+                        Text("Today")
+                        Image(systemName: "sunrise")
+                    }
+                }
+            
+            Text("Hourly Tab")
+                .tabItem {
+                    VStack {
+                        Text("Hourly")
+                        Image(systemName: "clock")
+                    }
+                }
+            
+            Text("Daily Tab")
+                .tabItem {
+                    VStack {
+                        Text("Daily")
+                        Image(systemName: "calendar")
+                    }
+                }
+        }
     }
 }
 

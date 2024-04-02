@@ -11,6 +11,11 @@
 		E09162CD2BBB4F7A009BF31C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E09162CC2BBB4F7A009BF31C /* ContentView.swift */; };
 		E09162CF2BBB4F7B009BF31C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E09162CE2BBB4F7B009BF31C /* Assets.xcassets */; };
 		E09162D22BBB4F7B009BF31C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E09162D12BBB4F7B009BF31C /* Preview Assets.xcassets */; };
+		E09162E52BBB7443009BF31C /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E09162E42BBB7443009BF31C /* MainTabView.swift */; };
+		E09162EA2BBB7AD9009BF31C /* TodayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E09162E92BBB7AD9009BF31C /* TodayView.swift */; };
+		E09162EC2BBC2D02009BF31C /* Color+JustWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = E09162EB2BBC2D02009BF31C /* Color+JustWeather.swift */; };
+		E09162F12BBC2E16009BF31C /* JWBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = E09162F02BBC2E16009BF31C /* JWBackground.swift */; };
+		E09162F32BBC338B009BF31C /* HourlyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E09162F22BBC338B009BF31C /* HourlyView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,11 @@
 		E09162CC2BBB4F7A009BF31C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E09162CE2BBB4F7B009BF31C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E09162D12BBB4F7B009BF31C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E09162E42BBB7443009BF31C /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		E09162E92BBB7AD9009BF31C /* TodayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayView.swift; sourceTree = "<group>"; };
+		E09162EB2BBC2D02009BF31C /* Color+JustWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+JustWeather.swift"; sourceTree = "<group>"; };
+		E09162F02BBC2E16009BF31C /* JWBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JWBackground.swift; sourceTree = "<group>"; };
+		E09162F22BBC338B009BF31C /* HourlyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourlyView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +63,7 @@
 			children = (
 				E09162DB2BBB4FB6009BF31C /* App */,
 				E09162DA2BBB4FB2009BF31C /* Core */,
+				E09162ED2BBC2DC1009BF31C /* Components */,
 				E09162D92BBB4FAF009BF31C /* Extensions */,
 				E09162D82BBB4FAB009BF31C /* Models */,
 				E09162DD2BBB4FDE009BF31C /* Root */,
@@ -81,6 +92,7 @@
 		E09162D92BBB4FAF009BF31C /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				E09162EB2BBC2D02009BF31C /* Color+JustWeather.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -88,6 +100,10 @@
 		E09162DA2BBB4FB2009BF31C /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				E09162E82BBB7AC9009BF31C /* Daily */,
+				E09162E72BBB7AC6009BF31C /* Hourly */,
+				E09162E32BBB7437009BF31C /* MainTab */,
+				E09162E62BBB7AC1009BF31C /* Today */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -113,6 +129,45 @@
 				E09162CC2BBB4F7A009BF31C /* ContentView.swift */,
 			);
 			path = Root;
+			sourceTree = "<group>";
+		};
+		E09162E32BBB7437009BF31C /* MainTab */ = {
+			isa = PBXGroup;
+			children = (
+				E09162E42BBB7443009BF31C /* MainTabView.swift */,
+			);
+			path = MainTab;
+			sourceTree = "<group>";
+		};
+		E09162E62BBB7AC1009BF31C /* Today */ = {
+			isa = PBXGroup;
+			children = (
+				E09162E92BBB7AD9009BF31C /* TodayView.swift */,
+			);
+			path = Today;
+			sourceTree = "<group>";
+		};
+		E09162E72BBB7AC6009BF31C /* Hourly */ = {
+			isa = PBXGroup;
+			children = (
+				E09162F22BBC338B009BF31C /* HourlyView.swift */,
+			);
+			path = Hourly;
+			sourceTree = "<group>";
+		};
+		E09162E82BBB7AC9009BF31C /* Daily */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Daily;
+			sourceTree = "<group>";
+		};
+		E09162ED2BBC2DC1009BF31C /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				E09162F02BBC2E16009BF31C /* JWBackground.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,6 +242,11 @@
 			files = (
 				E09162CD2BBB4F7A009BF31C /* ContentView.swift in Sources */,
 				E09162CB2BBB4F7A009BF31C /* JustWeatherApp.swift in Sources */,
+				E09162F12BBC2E16009BF31C /* JWBackground.swift in Sources */,
+				E09162EA2BBB7AD9009BF31C /* TodayView.swift in Sources */,
+				E09162F32BBC338B009BF31C /* HourlyView.swift in Sources */,
+				E09162EC2BBC2D02009BF31C /* Color+JustWeather.swift in Sources */,
+				E09162E52BBB7443009BF31C /* MainTabView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

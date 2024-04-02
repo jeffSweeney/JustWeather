@@ -9,7 +9,23 @@ import SwiftUI
 
 struct HourlyView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            HStack {
+                Text("Odenton, MD")
+                    .font(.subheadline)
+                .fontWeight(.semibold)
+                
+                Image(systemName: "chevron.down")
+                    .imageScale(.small)
+            }
+            
+            Rectangle()
+                .frame(height: 0.5)
+            
+            Spacer()
+        }
+        .foregroundStyle(.white)
+        .modifier(JWBackground())
     }
 }
 
